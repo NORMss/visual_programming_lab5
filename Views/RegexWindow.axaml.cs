@@ -18,6 +18,7 @@ namespace visual_programming_lab5.Views
             {
                 var contex = this.DataContext as MainWindowViewModel;
                 contex.PatternNew = contex.PatternOld;
+                Close();
             };
 
             this.FindControl<Button>("CancelButton").Click += async delegate
